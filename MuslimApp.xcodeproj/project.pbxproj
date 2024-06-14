@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CF742D9A2C1C335600DF550A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF742D992C1C335600DF550A /* AppDelegate.swift */; };
 		CF742D9C2C1C335600DF550A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF742D9B2C1C335600DF550A /* SceneDelegate.swift */; };
-		CF742D9E2C1C335600DF550A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF742D9D2C1C335600DF550A /* ViewController.swift */; };
 		CF742DA12C1C335600DF550A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF742D9F2C1C335600DF550A /* Main.storyboard */; };
 		CF742DA32C1C335800DF550A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF742DA22C1C335800DF550A /* Assets.xcassets */; };
 		CF742DA62C1C335800DF550A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF742DA42C1C335800DF550A /* LaunchScreen.storyboard */; };
@@ -22,7 +21,6 @@
 		CF742D962C1C335600DF550A /* MuslimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuslimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF742D992C1C335600DF550A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF742D9B2C1C335600DF550A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CF742D9D2C1C335600DF550A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF742DA02C1C335600DF550A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF742DA22C1C335800DF550A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF742DA52C1C335800DF550A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 			children = (
 				CF742D992C1C335600DF550A /* AppDelegate.swift */,
 				CF742D9B2C1C335600DF550A /* SceneDelegate.swift */,
-				CF742D9D2C1C335600DF550A /* ViewController.swift */,
 				CF742D9F2C1C335600DF550A /* Main.storyboard */,
 				CF742DAD2C1C33AD00DF550A /* HomeViewController.swift */,
 				CF742DAF2C1C33C100DF550A /* SearchViewController.swift */,
@@ -148,7 +145,6 @@
 			files = (
 				CF742DB02C1C33C100DF550A /* SearchViewController.swift in Sources */,
 				CF742DB22C1C33D400DF550A /* MapViewController.swift in Sources */,
-				CF742D9E2C1C335600DF550A /* ViewController.swift in Sources */,
 				CF742D9A2C1C335600DF550A /* AppDelegate.swift in Sources */,
 				CF742D9C2C1C335600DF550A /* SceneDelegate.swift in Sources */,
 				CF742DAE2C1C33AD00DF550A /* HomeViewController.swift in Sources */,
