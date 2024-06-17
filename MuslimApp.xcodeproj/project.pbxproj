@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF416E3D2C1F444100FE05E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF416E3C2C1F444000FE05E5 /* GoogleService-Info.plist */; };
+		CF416E4E2C1F5B3300FE05E5 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF416E4D2C1F5B3300FE05E5 /* MyPageViewController.swift */; };
+		CF416E502C1F5DDE00FE05E5 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF416E4F2C1F5DDE00FE05E5 /* TestViewController.swift */; };
+		CF5F2DE32C1CBE4C00C33C2C /* restaurantData.json in Resources */ = {isa = PBXBuildFile; fileRef = CF5F2DE22C1CBE4B00C33C2C /* restaurantData.json */; };
 		CF742D9A2C1C335600DF550A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF742D992C1C335600DF550A /* AppDelegate.swift */; };
 		CF742D9C2C1C335600DF550A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF742D9B2C1C335600DF550A /* SceneDelegate.swift */; };
 		CF742DA12C1C335600DF550A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF742D9F2C1C335600DF550A /* Main.storyboard */; };
@@ -15,9 +19,22 @@
 		CF742DAE2C1C33AD00DF550A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF742DAD2C1C33AD00DF550A /* HomeViewController.swift */; };
 		CF742DB02C1C33C100DF550A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF742DAF2C1C33C100DF550A /* SearchViewController.swift */; };
 		CF742DB22C1C33D400DF550A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF742DB12C1C33D400DF550A /* MapViewController.swift */; };
+		CF779E562C1FB0C8007259C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF779E552C1FB0C8007259C1 /* LoginViewController.swift */; };
+		CF779E582C1FB13B007259C1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF779E572C1FB13B007259C1 /* SignUpViewController.swift */; };
+		CF779E5D2C2018A0007259C1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CF779E5C2C2018A0007259C1 /* FirebaseAuth */; };
+		CF779E5F2C2018A0007259C1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CF779E5E2C2018A0007259C1 /* FirebaseStorage */; };
+		CF779E612C2018A0007259C1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CF779E602C2018A0007259C1 /* FirebaseFirestore */; };
+		CF779E632C201A33007259C1 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF779E622C201A33007259C1 /* UserManager.swift */; };
+		CF779E652C20A27C007259C1 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF779E642C20A27C007259C1 /* RestaurantDetailViewController.swift */; };
+		CF779E692C20BA70007259C1 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF779E682C20BA70007259C1 /* SearchTableViewCell.swift */; };
+		CF7877F72C1D64EB0068A6B6 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7877F62C1D64EB0068A6B6 /* Restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF416E3C2C1F444000FE05E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CF416E4D2C1F5B3300FE05E5 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		CF416E4F2C1F5DDE00FE05E5 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		CF5F2DE22C1CBE4B00C33C2C /* restaurantData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = restaurantData.json; path = ../../restaurantData.json; sourceTree = "<group>"; };
 		CF742D962C1C335600DF550A /* MuslimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuslimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF742D992C1C335600DF550A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF742D9B2C1C335600DF550A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +45,12 @@
 		CF742DAD2C1C33AD00DF550A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CF742DAF2C1C33C100DF550A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		CF742DB12C1C33D400DF550A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CF779E552C1FB0C8007259C1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CF779E572C1FB13B007259C1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CF779E622C201A33007259C1 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		CF779E642C20A27C007259C1 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
+		CF779E682C20BA70007259C1 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		CF7877F62C1D64EB0068A6B6 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +58,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF779E5D2C2018A0007259C1 /* FirebaseAuth in Frameworks */,
+				CF779E5F2C2018A0007259C1 /* FirebaseStorage in Frameworks */,
+				CF779E612C2018A0007259C1 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF416E372C1F3E5E00FE05E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CF742D8D2C1C335600DF550A = {
 			isa = PBXGroup;
 			children = (
 				CF742D982C1C335600DF550A /* MuslimApp */,
 				CF742D972C1C335600DF550A /* Products */,
+				CF416E372C1F3E5E00FE05E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,15 +94,25 @@
 		CF742D982C1C335600DF550A /* MuslimApp */ = {
 			isa = PBXGroup;
 			children = (
+				CF5F2DE22C1CBE4B00C33C2C /* restaurantData.json */,
 				CF742D992C1C335600DF550A /* AppDelegate.swift */,
 				CF742D9B2C1C335600DF550A /* SceneDelegate.swift */,
 				CF742D9F2C1C335600DF550A /* Main.storyboard */,
+				CF779E682C20BA70007259C1 /* SearchTableViewCell.swift */,
+				CF779E642C20A27C007259C1 /* RestaurantDetailViewController.swift */,
+				CF779E552C1FB0C8007259C1 /* LoginViewController.swift */,
+				CF779E572C1FB13B007259C1 /* SignUpViewController.swift */,
+				CF416E4F2C1F5DDE00FE05E5 /* TestViewController.swift */,
+				CF416E4D2C1F5B3300FE05E5 /* MyPageViewController.swift */,
 				CF742DAD2C1C33AD00DF550A /* HomeViewController.swift */,
 				CF742DAF2C1C33C100DF550A /* SearchViewController.swift */,
 				CF742DB12C1C33D400DF550A /* MapViewController.swift */,
 				CF742DA22C1C335800DF550A /* Assets.xcassets */,
 				CF742DA42C1C335800DF550A /* LaunchScreen.storyboard */,
 				CF742DA72C1C335800DF550A /* Info.plist */,
+				CF7877F62C1D64EB0068A6B6 /* Restaurant.swift */,
+				CF416E3C2C1F444000FE05E5 /* GoogleService-Info.plist */,
+				CF779E622C201A33007259C1 /* UserManager.swift */,
 			);
 			path = MuslimApp;
 			sourceTree = "<group>";
@@ -89,6 +133,11 @@
 			dependencies = (
 			);
 			name = MuslimApp;
+			packageProductDependencies = (
+				CF779E5C2C2018A0007259C1 /* FirebaseAuth */,
+				CF779E5E2C2018A0007259C1 /* FirebaseStorage */,
+				CF779E602C2018A0007259C1 /* FirebaseFirestore */,
+			);
 			productName = MuslimApp;
 			productReference = CF742D962C1C335600DF550A /* MuslimApp.app */;
 			productType = "com.apple.product-type.application";
@@ -116,6 +165,9 @@
 				Base,
 			);
 			mainGroup = CF742D8D2C1C335600DF550A;
+			packageReferences = (
+				CF779E5B2C2018A0007259C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = CF742D972C1C335600DF550A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,6 +184,8 @@
 			files = (
 				CF742DA62C1C335800DF550A /* LaunchScreen.storyboard in Resources */,
 				CF742DA32C1C335800DF550A /* Assets.xcassets in Resources */,
+				CF416E3D2C1F444100FE05E5 /* GoogleService-Info.plist in Resources */,
+				CF5F2DE32C1CBE4C00C33C2C /* restaurantData.json in Resources */,
 				CF742DA12C1C335600DF550A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,10 +197,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF779E562C1FB0C8007259C1 /* LoginViewController.swift in Sources */,
 				CF742DB02C1C33C100DF550A /* SearchViewController.swift in Sources */,
 				CF742DB22C1C33D400DF550A /* MapViewController.swift in Sources */,
+				CF416E502C1F5DDE00FE05E5 /* TestViewController.swift in Sources */,
+				CF779E582C1FB13B007259C1 /* SignUpViewController.swift in Sources */,
+				CF416E4E2C1F5B3300FE05E5 /* MyPageViewController.swift in Sources */,
+				CF779E652C20A27C007259C1 /* RestaurantDetailViewController.swift in Sources */,
+				CF7877F72C1D64EB0068A6B6 /* Restaurant.swift in Sources */,
+				CF779E692C20BA70007259C1 /* SearchTableViewCell.swift in Sources */,
 				CF742D9A2C1C335600DF550A /* AppDelegate.swift in Sources */,
 				CF742D9C2C1C335600DF550A /* SceneDelegate.swift in Sources */,
+				CF779E632C201A33007259C1 /* UserManager.swift in Sources */,
 				CF742DAE2C1C33AD00DF550A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +382,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hansung.MuslimApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -347,6 +410,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF779E5B2C2018A0007259C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF779E5C2C2018A0007259C1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF779E5B2C2018A0007259C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CF779E5E2C2018A0007259C1 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF779E5B2C2018A0007259C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		CF779E602C2018A0007259C1 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF779E5B2C2018A0007259C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CF742D8E2C1C335600DF550A /* Project object */;
 }

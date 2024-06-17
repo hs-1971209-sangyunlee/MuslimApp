@@ -6,14 +6,25 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseStorage
+import FirebaseFirestore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
+        Firestore.firestore().collection("test").document("name").setData(["name" : "Sangyun"])
+        
+        let image = UIImage(named: "Seoul")
+        let imageData = image?.jpegData(compressionQuality: 1.0)
+        let reference = Storage.storage().reference().child("test").child("Seoul")
+        let metaData = StorageMetadata()
+        metaData.contentType = "image/png"
+        reference.putData(imageData!, metadata: metaData){_ in}
         return true
     }
 

@@ -9,21 +9,17 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var button: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationItem.backButtonTitle = "뒤로가기"
         // Do any additional setup after loading the view.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func buttonTouch(_ sender: UIButton) {
+        guard let testViewController = self.storyboard?.instantiateViewController(withIdentifier: "TestViewController") as? TestViewController else { return }
+                // UINavigationController를 사용하여 push 방식으로 화면 전환
+                self.navigationController?.pushViewController(testViewController, animated: true)
     }
-    */
-
 }
