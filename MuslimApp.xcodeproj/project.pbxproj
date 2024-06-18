@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF0A3EFE2C214A5400357D82 /* mosqueData.json in Resources */ = {isa = PBXBuildFile; fileRef = CF0A3EFD2C214A5400357D82 /* mosqueData.json */; };
+		CF0A3F002C214AAF00357D82 /* restaurantData.json in Resources */ = {isa = PBXBuildFile; fileRef = CF0A3EFF2C214AAF00357D82 /* restaurantData.json */; };
 		CF416E3D2C1F444100FE05E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF416E3C2C1F444000FE05E5 /* GoogleService-Info.plist */; };
 		CF416E4E2C1F5B3300FE05E5 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF416E4D2C1F5B3300FE05E5 /* MyPageViewController.swift */; };
 		CF416E502C1F5DDE00FE05E5 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF416E4F2C1F5DDE00FE05E5 /* TestViewController.swift */; };
-		CF5F2DE32C1CBE4C00C33C2C /* restaurantData.json in Resources */ = {isa = PBXBuildFile; fileRef = CF5F2DE22C1CBE4B00C33C2C /* restaurantData.json */; };
 		CF742D9A2C1C335600DF550A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF742D992C1C335600DF550A /* AppDelegate.swift */; };
 		CF742D9C2C1C335600DF550A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF742D9B2C1C335600DF550A /* SceneDelegate.swift */; };
 		CF742DA12C1C335600DF550A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF742D9F2C1C335600DF550A /* Main.storyboard */; };
@@ -31,10 +32,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF0A3EFD2C214A5400357D82 /* mosqueData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mosqueData.json; sourceTree = "<group>"; };
+		CF0A3EFF2C214AAF00357D82 /* restaurantData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = restaurantData.json; sourceTree = "<group>"; };
 		CF416E3C2C1F444000FE05E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF416E4D2C1F5B3300FE05E5 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		CF416E4F2C1F5DDE00FE05E5 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		CF5F2DE22C1CBE4B00C33C2C /* restaurantData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = restaurantData.json; path = ../../restaurantData.json; sourceTree = "<group>"; };
 		CF742D962C1C335600DF550A /* MuslimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuslimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF742D992C1C335600DF550A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF742D9B2C1C335600DF550A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,7 +96,7 @@
 		CF742D982C1C335600DF550A /* MuslimApp */ = {
 			isa = PBXGroup;
 			children = (
-				CF5F2DE22C1CBE4B00C33C2C /* restaurantData.json */,
+				CF0A3EFD2C214A5400357D82 /* mosqueData.json */,
 				CF742D992C1C335600DF550A /* AppDelegate.swift */,
 				CF742D9B2C1C335600DF550A /* SceneDelegate.swift */,
 				CF742D9F2C1C335600DF550A /* Main.storyboard */,
@@ -113,6 +115,7 @@
 				CF7877F62C1D64EB0068A6B6 /* Restaurant.swift */,
 				CF416E3C2C1F444000FE05E5 /* GoogleService-Info.plist */,
 				CF779E622C201A33007259C1 /* UserManager.swift */,
+				CF0A3EFF2C214AAF00357D82 /* restaurantData.json */,
 			);
 			path = MuslimApp;
 			sourceTree = "<group>";
@@ -182,10 +185,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF0A3F002C214AAF00357D82 /* restaurantData.json in Resources */,
 				CF742DA62C1C335800DF550A /* LaunchScreen.storyboard in Resources */,
 				CF742DA32C1C335800DF550A /* Assets.xcassets in Resources */,
 				CF416E3D2C1F444100FE05E5 /* GoogleService-Info.plist in Resources */,
-				CF5F2DE32C1CBE4C00C33C2C /* restaurantData.json in Resources */,
+				CF0A3EFE2C214A5400357D82 /* mosqueData.json in Resources */,
 				CF742DA12C1C335600DF550A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
