@@ -60,15 +60,15 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="485"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="O2g-Kk-926">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="house.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="O2g-Kk-926">
                                                                     <rect key="frame" x="10" y="10.5" width="40" height="39"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="40" id="S3t-3t-aTs"/>
                                                                         <constraint firstAttribute="height" constant="40" id="Xxg-Ui-dcp"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQ5-61-dVo">
-                                                                    <rect key="frame" x="60" y="11" width="65" height="39"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQ5-61-dVo">
+                                                                    <rect key="frame" x="60" y="11" width="59" height="39"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="39" id="c98-Kq-k3V"/>
                                                                     </constraints>
@@ -122,7 +122,7 @@
                                                         <connections>
                                                             <outlet property="postDetail" destination="oFs-ga-Nhj" id="K38-NK-4ZT"/>
                                                             <outlet property="postImage" destination="0ji-Hc-QU5" id="fPA-MV-jtm"/>
-                                                            <outlet property="user" destination="DQ5-61-dVo" id="4lf-eE-a8a"/>
+                                                            <outlet property="postTitle" destination="DQ5-61-dVo" id="t3a-GD-77v"/>
                                                         </connections>
                                                     </tableViewCell>
                                                 </prototypes>
@@ -323,7 +323,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="57.5" id="RvK-vB-XML"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -962,7 +962,7 @@
                                                 <rect key="frame" x="88.5" y="0.0" width="255.5" height="34"/>
                                                 <color key="backgroundColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -1078,7 +1078,7 @@
                                                 <rect key="frame" x="0.0" y="34" width="374" height="34"/>
                                                 <color key="backgroundColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 <connections>
                                                     <action selector="endPasswordEditing:" destination="T0R-0s-L4O" eventType="editingDidEnd" id="1a4-Vp-ajg"/>
                                                     <action selector="startPasswordEditing:" destination="T0R-0s-L4O" eventType="editingDidBegin" id="vCz-og-37J"/>
@@ -1099,7 +1099,7 @@
                                                 <rect key="frame" x="0.0" y="34" width="374" height="34"/>
                                                 <color key="backgroundColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 <connections>
                                                     <action selector="endPasswordCheckEditing:" destination="T0R-0s-L4O" eventType="editingDidEnd" id="Ug2-Zt-g2s"/>
                                                     <action selector="startPasswordCheckEditing:" destination="T0R-0s-L4O" eventType="editingDidBegin" id="62y-l1-jS8"/>
@@ -1320,6 +1320,7 @@
         <image name="highlighter" catalog="system" width="128" height="119"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="house.circle" catalog="system" width="128" height="121"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="mappin.circle" catalog="system" width="128" height="121"/>
         <image name="pencil.circle" catalog="system" width="128" height="121"/>

@@ -20,6 +20,12 @@ class SignUpViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tapGesture)
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if UserManager.shared.isLoggedIn {
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
     
     @IBAction func startPasswordEditing(_ sender: UITextField) {
         stackViewTopConstraint.constant -= 100

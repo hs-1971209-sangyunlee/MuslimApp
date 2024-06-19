@@ -103,7 +103,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
 
             let post = posts[indexPath.row]
             cell.postDetail.text = post.detail
-            cell.user.text = post.userName
+            cell.postTitle.text = post.title
             
             if let imagePath = post.image {
                         let storageRef = Storage.storage().reference().child(imagePath)
