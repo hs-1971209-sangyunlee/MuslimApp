@@ -3,41 +3,63 @@ import Firebase
 import FirebaseFirestore
 import FirebaseStorage
 
-class MyPageViewController: UIViewController {
-        
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var emailLabel: UILabel!
+class PlaceDetailViewController: UIViewController {
+
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var menuLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var noteLabel: UILabel!
+    @IBOutlet weak var menuStackView: UIStackView!
+    @IBOutlet weak var priceStackView: UIStackView!
+    @IBOutlet weak var noteStackView: UIStackView!
     @IBOutlet weak var postTableView: UITableView!
+    
+    var restaurant : Restaurant?
+    var mosque : Mosque?
+    var isRestaurant = true
     var posts: [Post] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         postTableView.delegate = self
         postTableView.dataSource = self
-        //checkLoginStatus()
+        
+        titleLabel.text = isRestaurant ? restaurant?.title : mosque?.title
+        typeLabel.text = isRestaurant ? restaurant?.type : mosque?.type
+        addressLabel.text = isRestaurant ? restaurant?.address : mosque?.address
+        phoneLabel.text = isRestaurant ? restaurant?.phone_number : mosque?.phone_number
+        if(isRestaurant){
+            menuLabel.text = restaurant?.menu
+            priceLabel.text = restaurant?.price
+            noteLabel.text = restaurant?.note
+            menuStackView.isHidden = false
+            priceStackView.isHidden = false
+            noteStackView.isHidden = false
+        }else{
+            menuStackView.isHidden = true
+            priceStackView.isHidden = true
+            noteStackView.isHidden = true
+        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        checkLoginStatus()
-        nameLabel.text = UserManager.shared.userName
-        emailLabel.text = UserManager.shared.userId
-
         loadPosts()
-    }
-    func checkLoginStatus() {
-        if !UserManager.shared.isLoggedIn {
-            moveToLogin()
-        }
+        print("new loads")
     }
     
     func loadPosts() {
+        guard let placeId = isRestaurant ? restaurant?.id : mosque?.id else {
+            print("placeId is nil")
+            return
+        }
         let db = Firestore.firestore()
-        let userId = UserManager.shared.userId
-        
         db.collection("posts")
-            .whereField("userId", isEqualTo: userId)
+            .whereField("placeId", isEqualTo: placeId)
             .order(by: "timestamp", descending: true)
             .getDocuments { (querySnapshot, error) in
                 if let error = error {
@@ -66,19 +88,34 @@ class MyPageViewController: UIViewController {
             }
     }
     
-    @IBAction func logoutTouch(_ sender: UIButton) {
-        moveToLogin()
-        UserManager.shared.isLoggedIn = false
+    @IBAction func createPostTouch(_ sender: UIButton) {
+        if(UserManager.shared.isLoggedIn){
+            guard let createPostViewController = self.storyboard?.instantiateViewController(withIdentifier: "CreatePostViewController") as? CreatePostViewController else { return }
+            if(isRestaurant){
+                createPostViewController.restaurant = restaurant
+            }else{
+                createPostViewController.mosque = mosque
+            }
+            createPostViewController.isRestaurant = isRestaurant
+            // UINavigationController를 사용하여 push 방식으로 화면 전환
+            self.navigationController?.pushViewController(createPostViewController, animated: true)
+        }else{
+            //팝업창 표시
+            let alert = UIAlertController(title: "로그인 필요", message: "로그인을 해주세요.", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "확인", style: .default) { _ in
+                // 확인 버튼을 눌렀을 때 로그인 페이지로 이동
+                guard let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else { return }
+                loginViewController.hideBackButton = false
+                        self.navigationController?.pushViewController(loginViewController, animated: true)
+            }
+            alert.addAction(okAction)
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
-    func moveToLogin(){
-        guard let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else { return }
-                // UINavigationController를 사용하여 push 방식으로 화면 전환
-                self.navigationController?.pushViewController(loginViewController, animated: true)
-    }
 }
 
-extension MyPageViewController: UITableViewDelegate, UITableViewDataSource{
+extension PlaceDetailViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
         }
@@ -88,8 +125,7 @@ extension MyPageViewController: UITableViewDelegate, UITableViewDataSource{
 
             let post = posts[indexPath.row]
             cell.postDetail.text = post.detail
-            cell.postTitle.text = post.title
-
+            cell.user.text = post.userName
             
             if let imagePath = post.image {
                         let storageRef = Storage.storage().reference().child(imagePath)

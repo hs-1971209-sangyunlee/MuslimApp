@@ -1,13 +1,6 @@
-//
-//  restaurantDetailViewController.swift
-//  MuslimApp
-//
-//  Created by Sangyun on 2024/06/18.
-//
-
 import UIKit
 
-class RestaurantDetailViewController: UIViewController {
+class DetailViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
     var restaurant : Restaurant?
@@ -16,4 +9,7 @@ class RestaurantDetailViewController: UIViewController {
         titleLabel.text = restaurant?.title
     }
     
+    @IBAction func createPostTouch(_ sender: UIButton) {
+        
+    }
 }

@@ -11,7 +11,11 @@
 		CF0A3F002C214AAF00357D82 /* restaurantData.json in Resources */ = {isa = PBXBuildFile; fileRef = CF0A3EFF2C214AAF00357D82 /* restaurantData.json */; };
 		CF416E3D2C1F444100FE05E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF416E3C2C1F444000FE05E5 /* GoogleService-Info.plist */; };
 		CF416E4E2C1F5B3300FE05E5 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF416E4D2C1F5B3300FE05E5 /* MyPageViewController.swift */; };
-		CF416E502C1F5DDE00FE05E5 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF416E4F2C1F5DDE00FE05E5 /* TestViewController.swift */; };
+		CF67B9942C2160F5004E2ACF /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67B9932C2160F5004E2ACF /* CreatePostViewController.swift */; };
+		CF67B9982C2164BF004E2ACF /* PlaceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67B9972C2164BF004E2ACF /* PlaceDetailViewController.swift */; };
+		CF67B99A2C21902A004E2ACF /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67B9992C21902A004E2ACF /* Place.swift */; };
+		CF67B99C2C21A5B4004E2ACF /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67B99B2C21A5B4004E2ACF /* PostTableViewCell.swift */; };
+		CF67B99E2C21B17A004E2ACF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67B99D2C21B17A004E2ACF /* Post.swift */; };
 		CF742D9A2C1C335600DF550A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF742D992C1C335600DF550A /* AppDelegate.swift */; };
 		CF742D9C2C1C335600DF550A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF742D9B2C1C335600DF550A /* SceneDelegate.swift */; };
 		CF742DA12C1C335600DF550A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF742D9F2C1C335600DF550A /* Main.storyboard */; };
@@ -26,9 +30,7 @@
 		CF779E5F2C2018A0007259C1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CF779E5E2C2018A0007259C1 /* FirebaseStorage */; };
 		CF779E612C2018A0007259C1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CF779E602C2018A0007259C1 /* FirebaseFirestore */; };
 		CF779E632C201A33007259C1 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF779E622C201A33007259C1 /* UserManager.swift */; };
-		CF779E652C20A27C007259C1 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF779E642C20A27C007259C1 /* RestaurantDetailViewController.swift */; };
 		CF779E692C20BA70007259C1 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF779E682C20BA70007259C1 /* SearchTableViewCell.swift */; };
-		CF7877F72C1D64EB0068A6B6 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7877F62C1D64EB0068A6B6 /* Restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +38,11 @@
 		CF0A3EFF2C214AAF00357D82 /* restaurantData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = restaurantData.json; sourceTree = "<group>"; };
 		CF416E3C2C1F444000FE05E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF416E4D2C1F5B3300FE05E5 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
-		CF416E4F2C1F5DDE00FE05E5 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		CF67B9932C2160F5004E2ACF /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		CF67B9972C2164BF004E2ACF /* PlaceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewController.swift; sourceTree = "<group>"; };
+		CF67B9992C21902A004E2ACF /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		CF67B99B2C21A5B4004E2ACF /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		CF67B99D2C21B17A004E2ACF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CF742D962C1C335600DF550A /* MuslimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuslimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF742D992C1C335600DF550A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF742D9B2C1C335600DF550A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,9 +56,7 @@
 		CF779E552C1FB0C8007259C1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CF779E572C1FB13B007259C1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CF779E622C201A33007259C1 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
-		CF779E642C20A27C007259C1 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		CF779E682C20BA70007259C1 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
-		CF7877F62C1D64EB0068A6B6 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,22 +101,24 @@
 			isa = PBXGroup;
 			children = (
 				CF0A3EFD2C214A5400357D82 /* mosqueData.json */,
+				CF67B9992C21902A004E2ACF /* Place.swift */,
 				CF742D992C1C335600DF550A /* AppDelegate.swift */,
 				CF742D9B2C1C335600DF550A /* SceneDelegate.swift */,
 				CF742D9F2C1C335600DF550A /* Main.storyboard */,
+				CF67B9932C2160F5004E2ACF /* CreatePostViewController.swift */,
 				CF779E682C20BA70007259C1 /* SearchTableViewCell.swift */,
-				CF779E642C20A27C007259C1 /* RestaurantDetailViewController.swift */,
+				CF67B99B2C21A5B4004E2ACF /* PostTableViewCell.swift */,
 				CF779E552C1FB0C8007259C1 /* LoginViewController.swift */,
 				CF779E572C1FB13B007259C1 /* SignUpViewController.swift */,
-				CF416E4F2C1F5DDE00FE05E5 /* TestViewController.swift */,
 				CF416E4D2C1F5B3300FE05E5 /* MyPageViewController.swift */,
 				CF742DAD2C1C33AD00DF550A /* HomeViewController.swift */,
 				CF742DAF2C1C33C100DF550A /* SearchViewController.swift */,
+				CF67B9972C2164BF004E2ACF /* PlaceDetailViewController.swift */,
+				CF67B99D2C21B17A004E2ACF /* Post.swift */,
 				CF742DB12C1C33D400DF550A /* MapViewController.swift */,
 				CF742DA22C1C335800DF550A /* Assets.xcassets */,
 				CF742DA42C1C335800DF550A /* LaunchScreen.storyboard */,
 				CF742DA72C1C335800DF550A /* Info.plist */,
-				CF7877F62C1D64EB0068A6B6 /* Restaurant.swift */,
 				CF416E3C2C1F444000FE05E5 /* GoogleService-Info.plist */,
 				CF779E622C201A33007259C1 /* UserManager.swift */,
 				CF0A3EFF2C214AAF00357D82 /* restaurantData.json */,
@@ -203,15 +209,17 @@
 			files = (
 				CF779E562C1FB0C8007259C1 /* LoginViewController.swift in Sources */,
 				CF742DB02C1C33C100DF550A /* SearchViewController.swift in Sources */,
+				CF67B99C2C21A5B4004E2ACF /* PostTableViewCell.swift in Sources */,
 				CF742DB22C1C33D400DF550A /* MapViewController.swift in Sources */,
-				CF416E502C1F5DDE00FE05E5 /* TestViewController.swift in Sources */,
 				CF779E582C1FB13B007259C1 /* SignUpViewController.swift in Sources */,
 				CF416E4E2C1F5B3300FE05E5 /* MyPageViewController.swift in Sources */,
-				CF779E652C20A27C007259C1 /* RestaurantDetailViewController.swift in Sources */,
-				CF7877F72C1D64EB0068A6B6 /* Restaurant.swift in Sources */,
 				CF779E692C20BA70007259C1 /* SearchTableViewCell.swift in Sources */,
 				CF742D9A2C1C335600DF550A /* AppDelegate.swift in Sources */,
+				CF67B9942C2160F5004E2ACF /* CreatePostViewController.swift in Sources */,
 				CF742D9C2C1C335600DF550A /* SceneDelegate.swift in Sources */,
+				CF67B99E2C21B17A004E2ACF /* Post.swift in Sources */,
+				CF67B99A2C21902A004E2ACF /* Place.swift in Sources */,
+				CF67B9982C2164BF004E2ACF /* PlaceDetailViewController.swift in Sources */,
 				CF779E632C201A33007259C1 /* UserManager.swift in Sources */,
 				CF742DAE2C1C33AD00DF550A /* HomeViewController.swift in Sources */,
 			);
